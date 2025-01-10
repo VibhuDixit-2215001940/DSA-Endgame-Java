@@ -1,6 +1,8 @@
 package Array.Lec.Day1;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class one {
     public static void main(String[] args) {
@@ -51,5 +53,59 @@ public class one {
         // int[] arr = new int[5];
         // arr[5] = 10; // Throws ArrayIndexOutOfBoundsException
         // System.out.println(arr[5]); // Throws ArrayIndexOutOfBoundsException
+
+        // --------------------TRAVERSING------------------
+        // int[] arr = { 0, 1, 2, 3, 4 };
+        // for (int i = 0; i < 5; i++) {
+        // System.out.print(arr[i] + " ");
+        // }
+        // for (int x : arr)// More preferrable
+        // System.out.print(x + " ");
+
+        // ---------------------DECLARATION----------------
+        // int[] arr = new int[5];// Java type declaration
+        // int arr1[] = new int[5];// C type declaration
+
+        // ----------------------SWAP----------------
+        // int a = 5, b = 10;
+        // System.out.println("Before Swap: a = " + a + ", b = " + b);
+        // // Swap logic
+        // a = a + b; // a becomes 15
+        // b = a - b; // b becomes 5 (original value of a)
+        // a = a - b; // a becomes 10 (original value of b)
+        // System.out.println("After Swap: a = " + a + ", b = " + b);
+
+        // ----------------------SEARCH----------------
+        // int[] arr = { 1, 2, 3, 4, 5 };
+        // int key = 3;
+        // int index = Arrays.binarySearch(arr, key);
+        // System.out.println(index);// 2
+
+        // ----------------------SORT------------------
+        // int[] arr = { 5, 4, 3, 2, 1 };
+        // Arrays.sort(arr);
+        // System.out.println(Arrays.toString(arr));// [1, 2, 3, 4, 5]
+
+        // ----------------------MAX ELE------------------
+        // int[] arr = { 1, 5, 3, 9, 2 };
+        // int max = Arrays.stream(arr).max().orElseThrow(); // Get max value
+        // System.out.println("Max element: " + max); // Output: 9
+
+        // List<Integer> list = Arrays.asList(3, 5, 7, 2, 8);
+        // int max = Collections.max(list);
+        // System.out.println("Max element: " + max);// 8
+
+        // -----------------------REVERSE-------------------
+        int[] arr = { 1, 2, 3, 4, 5 };
+        int left = 0;
+        int right = arr.length - 1;
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+        System.out.println(Arrays.toString(arr)); // Output: [5, 4, 3, 2, 1]
     }
 }
