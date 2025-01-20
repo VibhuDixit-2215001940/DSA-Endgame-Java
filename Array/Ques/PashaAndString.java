@@ -57,3 +57,28 @@ public class Main {
         System.out.println(new String(charArray));
     }
 }
+// TLE Bruteforce
+// import java.util.*;
+
+// public class Main {
+// public static void reverse(char[] charArray,int s,int e){
+// while(s<e){
+// char temp = charArray[s];
+// charArray[s] = charArray[e];
+// charArray[e] = temp;
+// s++;e--;
+// }
+// }
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// String s = sc.nextLine();
+// int n = s.length();
+// int m = sc.nextInt();
+// int[] arr = new int[m];
+// for (int i = 0; i < m; i++) arr[i] = sc.nextInt();
+// char[] charArray = s.toCharArray();
+// int z = charArray.length;
+// for(int x : arr) reverse(charArray,x-1,z-x);
+// System.out.println(new String(charArray));
+// }
+// }
