@@ -1,5 +1,3 @@
-package Array.Lec.Day1;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
