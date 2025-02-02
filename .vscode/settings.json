@@ -2,10 +2,11 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "Ques",
+        "Lecture/Day8",
         "Lecture/Day6",
         "Lecture/Day4",
         "Lecture/Day1",
         "CB",
-        "Lecture/Day8"
+        "Lecture/Day9"
     ]
 }
