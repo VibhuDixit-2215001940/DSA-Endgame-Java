@@ -10,7 +10,7 @@ public class FactorialUsingTailRecursion {
     public static int fact2(int n, int ans) {
         if (n == 0)
             return ans;
-        return fact2(n - 1, n * ans); // Tail recursion as jab stack lot raha hai tab ans hamara calculate ho raha!!
+        return fact2(n - 1, n * ans); // Tail recursion as jab stack ban raha hai tab ans hamara calculate ho raha!!
     }
 
     public static void main(String[] args) {
