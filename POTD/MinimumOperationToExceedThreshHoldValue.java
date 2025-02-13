@@ -22,3 +22,21 @@ class Solution {
         return (arr[0] >= k) ? count : -1;
     }
 }
+
+// ACCEPTED
+class Solution {
+    public int minOperations(int[] arr, int k) {
+        PriorityQueue<Long> pq = new PriorityQueue<>();
+        for (int num : arr)
+            pq.add((long) num);
+        int count = 0;
+        while (pq.size() > 1 && pq.peek() < k) {
+            long a = pq.poll();
+            long b = pq.poll();
+            long x = a * 2 + b;
+            pq.add(x);
+            count++;
+        }
+        return (pq.peek() >= k) ? count : -1;
+    }
+}
