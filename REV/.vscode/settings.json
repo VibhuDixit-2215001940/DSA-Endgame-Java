@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "Trie",
+        "LinkedList",
+        "Bitmasking",
+        "HashCode.java"
+    ]
+}
